@@ -1,0 +1,48 @@
+L> select * from restuarant;
+
+    BILLID NAME            PH_NO     AMOUNT
+---------- ---------- ---------- ----------
+   1000001 chaithu          1234        900
+   1000002 chanti           1564        970
+   1000003 chinni           9564        970
+   1000004 chamu            9523        770
+   1000005 chinnu           4523        790
+   1000006 shalini          4903        790
+   1000007 jaya             9903        990
+   1000008 rajya            9803        900
+   1000009 babblu           9893        500
+   1000010 bujji            9853        300
+
+10 rows selected.
+
+SQL> select * from restuarant where name like '%j';
+
+no rows selected
+
+SQL> select * from restuarant where name like 'j%';
+
+    BILLID NAME            PH_NO     AMOUNT
+---------- ---------- ---------- ----------
+   1000007 jaya             9903        990
+
+
+
+SQL> select name,amount from restuarant order by name asc;
+
+NAME           AMOUNT
+---------- ----------
+babblu            500
+bujji             300
+chaithu           900
+chamu             770
+chanti            970
+chinni            970
+chinnu            790
+jaya              990
+rajya             900
+shalini           790
+
+10 rows selected.
+
+SQL>
+
